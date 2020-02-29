@@ -44,7 +44,7 @@ sleep(3)
 password_box.clear()
 
 #usr1 = input('Enter your email:')
-pwd1 = 'G0T0Sleep'
+pwd1 = 'tyuvhjgg'
 
 outlookDriver = webdriver.Chrome()
 outlookDriver.get('https://outlook.live.com/owa/')
