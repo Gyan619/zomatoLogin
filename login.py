@@ -21,9 +21,6 @@ print('login popup appeared')
 zomatoDriver.switch_to.frame(zomatoDriver.find_element_by_xpath(
     "//a[@id='login-email'] // span[@class='fontsize3']").click())
 
-
-#window_after = driver.window_handles[1]
-# driver.switch_to.window(window_after)
 zomatoDriver.switch_to.default_content()
 username_box = zomatoDriver.find_element_by_xpath(
     "//input[@type='text' and @class='zomato-form-input-plain' and @id='ld-email']")
@@ -44,7 +41,7 @@ sleep(3)
 password_box.clear()
 
 #usr1 = input('Enter your email:')
-pwd1 = 'tyuvhjgg'
+pwd1 = input('ENter the Password:')
 
 outlookDriver = webdriver.Chrome()
 outlookDriver.get('https://outlook.live.com/owa/')
@@ -90,10 +87,6 @@ final_click = outlookDriver.find_element_by_xpath("//input[@type='submit']")
 final_click.click()
 sleep(6)
 
-# driver.switch_to_defautlt_content()
-# sleep(8)
-
-# driver.find_element_by_id('AQAAAPBWCp4BAAAB9ZyiHQAAAAA=').click()
 
 outlookDriver.find_element_by_xpath(
     "(//span[contains(text(),'OTP')])[1]").click()
@@ -101,7 +94,7 @@ my_value = outlookDriver.find_element_by_xpath(
     "//p[@class='x_text-center x_zn-fontbig x_zn-bold']")
 new_value = my_value.text
 print(new_value)
-# outlookDriver.quit()
+#outlookDriver.quit()
 print('Done!')
 
 
@@ -114,6 +107,6 @@ login_box.click()
 
 zomatoDriver.switch_to_window(window_before)
 print("Done")
-input("Press any key to quit")
-zomatoDriver.quit()
+#input("Press any key to quit")
+#zomatoDriver.quit()
 print("Finished")
